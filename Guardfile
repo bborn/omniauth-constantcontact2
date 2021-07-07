@@ -6,5 +6,5 @@ end
 
 guard 'bundler' do
   watch('Gemfile')
-  watch('omniauth-constantcontact2.gemspec')
+  watch('omniauth-constantcontact3.gemspec')
 end

@@ -1,8 +1,8 @@
-# Omniauth::ConstantContact2
+# Omniauth::ConstantContact3
 
-[![Build Status](https://travis-ci.org/asanghi/omniauth-constantcontact2.svg?branch=master)](https://travis-ci.org/asanghi/omniauth-constantcontact2)
+[![Build Status](https://travis-ci.org/asanghi/omniauth-constantcontact3.svg?branch=master)](https://travis-ci.org/asanghi/omniauth-constantcontact3)
 
-This gem is an OmniAuth 2.0 Strategy for the [ConstantContact API](http://http://community.constantcontact.com/t5/Documentation/Authentication-using-OAuth-2-0-new-October-2011/ba-p/38313)
+This gem is an OmniAuth 2.0 Strategy for the [ConstantContact V3 API](https://v3.developer.constantcontact.com/api_reference)
 
 It supports the OmniAuth REST API which uses OAuth 2.0
 
@@ -12,7 +12,7 @@ Many thanks to [Caleb Clark](https://github.com/calebclark/omniauth-constantcont
 
 Add this line to your application's Gemfile:
 
-    gem 'omniauth-constantcontact2'
+    gem 'omniauth-constantcontact3'
 
 And then execute:
 
@@ -20,7 +20,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install omniauth-constantcontact2
+    $ gem install omniauth-constantcontact3
 
 ## Usage
 
@@ -40,18 +40,16 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-** Ensure that you have provided the correct Redirect URI in Constant Contact when you generated the Key.
+\*\* Ensure that you have provided the correct Redirect URI in Constant Contact when you generated the Key.
 You are likely to see an error stating "invalid redirect" if the Request URI does not match the one from your environment.
 
 In development for example the Redirect URI is
 
     http://localhost:3000/auth/constantcontact/callback
 
-
 You will have to put in your consumer key and secret, which you can find at http://community.constantcontact.com/t5/Documentation/API-Keys/ba-p/25015
 
 For additional information, refer to the [OmniAuth wiki](https://github.com/intridea/omniauth/wiki).
-
 
 ## Contributing
 
@@ -63,4 +61,4 @@ For additional information, refer to the [OmniAuth wiki](https://github.com/intr
 
 ## Copyright
 
-Copyright (c) 2012 Aditya Sanghi. See [LICENSE](https://github.com/asanghi/omniauth-constantcontact2/blob/master/LICENSE.md) for details.
+Copyright (c) 2012 Aditya Sanghi. See [LICENSE](https://github.com/asanghi/omniauth-constantcontact3/blob/master/LICENSE.md) for details.

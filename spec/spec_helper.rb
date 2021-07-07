@@ -5,7 +5,7 @@ SimpleCov.start
 require 'rspec'
 require 'rack/test'
 require 'omniauth'
-require 'omniauth-constantcontact2'
+require 'omniauth-constantcontact3'
 
 OmniAuth.config.test_mode = true
 
