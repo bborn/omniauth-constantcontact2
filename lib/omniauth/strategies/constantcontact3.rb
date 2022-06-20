@@ -8,8 +8,8 @@ module OmniAuth
       option :name, "constantcontact"
 
       option :client_options, {
-        :authorize_url => 'https://api.cc.email/v3/idfed',
-        :token_url => 'https://idfed.constantcontact.com/as/token.oauth2'
+        :authorize_url => 'https://authz.constantcontact.com/oauth2/default/v1/authorize',
+        :token_url => 'https://authz.constantcontact.com/oauth2/default/v1/token'
       }
 
       def callback_url
